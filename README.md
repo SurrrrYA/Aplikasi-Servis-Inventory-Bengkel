@@ -301,7 +301,7 @@ Dengan adanya sistem terintegrasi, proses pencatatan dan monitoring dapat dilaku
 
 ## Author
 
-**Surya**
+**Ardiansyah Surya Pratama**
 
 ---
 
