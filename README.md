@@ -278,10 +278,25 @@ Aplikasi ini dikembangkan untuk membantu digitalisasi proses operasional bengkel
 
 Dengan adanya sistem terintegrasi, proses pencatatan dan monitoring dapat dilakukan secara lebih terstruktur serta mengurangi ketergantungan terhadap pencatatan manual.
 
+## Tampilan Halaman Aplikasi
+
+Tampilan Login
+<img width="1080" height="2340" alt="Screenshot_2026-09-12-21-29-21-392_com bengkel sempoeloer" src="https://github.com/user-attachments/assets/ead0fd1f-12b7-42a8-b50d-83ea968721a1" />
+
+Tampilan owner
+<img width="1080" height="2340" alt="Screenshot_2026-09-12-21-32-12-257_com bengkel sempoeloer" src="https://github.com/user-attachments/assets/fb2a0f65-c1ce-4526-9b5e-e914b00662ad" />
+
+Tampilan Karyawan/Kasir
+<img width="1080" height="2340" alt="Screenshot_2026-09-12-23-01-26-245_com bengkel sempoeloer" src="https://github.com/user-attachments/assets/27361bab-f8b4-455f-a45e-19007c878499" />
+<img width="1080" height="2340" alt="Screenshot_2026-09-12-23-01-31-496_com bengkel sempoeloer" src="https://github.com/user-attachments/assets/d3b70350-3a54-405d-ad83-f0c298e73380" />
+<img width="1080" height="2340" alt="Screenshot_2026-09-12-23-01-39-917_com bengkel sempoeloer" src="https://github.com/user-attachments/assets/8fcaffba-d017-4971-bdb7-e0ca92c9f050" />
+
+
 ## Author
 
 **Surya**
 
 ---
+
 
 > Aplikasi Servis Inventory Bengkel dikembangkan sebagai project portfolio untuk menunjukkan implementasi backend REST API, database management, role-based access control, inventory management, transaction management, audit logging, project management, dan Firebase Cloud Messaging.
