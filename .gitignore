@@ -1,0 +1,84 @@
+# =========================================================
+# ENVIRONMENT & SECRETS
+# =========================================================
+.env
+.env.backup
+.env.production
+.env.*.local
+/app/firebase/service-account.json
+/auth.json
+*.pem
+*.key
+!/storage/*.key
+
+# =========================================================
+# DEPENDENCY (bisa di-generate ulang dari composer.json / package.json)
+# =========================================================
+/vendor
+/node_modules
+
+# =========================================================
+# DATABASE & DATA LOKAL
+# =========================================================
+/database/database.sqlite
+/database/*.sqlite
+*.sql
+*.sqlite3
+
+# =========================================================
+# LARAVEL GENERATED / CACHE
+# =========================================================
+*.log
+/storage/*.key
+/storage/pail
+/storage/framework/cache/*
+!/storage/framework/cache/.gitignore
+/storage/framework/sessions/*
+!/storage/framework/sessions/.gitignore
+/storage/framework/views/*
+!/storage/framework/views/.gitignore
+/storage/framework/testing/*
+!/storage/framework/testing/.gitignore
+/bootstrap/cache/*.php
+!/bootstrap/cache/.gitignore
+.phpunit.result.cache
+.phpunit.cache
+/public/build
+/public/hot
+/public/storage
+
+# =========================================================
+# TESTING / DEBUG SCRIPTS (kalau berisi kredensial testing)
+# =========================================================
+/test-guzzle.php
+/test-ssl.php
+
+# =========================================================
+# EDITOR / IDE
+# =========================================================
+/.fleet
+/.idea
+/.nova
+/.vscode
+/.zed
+.phpactor.json
+
+# =========================================================
+# OS FILES
+# =========================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================================================
+# HOMESTEAD / VAGRANT
+# =========================================================
+Homestead.json
+Homestead.yaml
+.vagrant
+
+# =========================================================
+# BUILD OUTPUT (frontend, kalau ada)
+# =========================================================
+/dist
+/build
