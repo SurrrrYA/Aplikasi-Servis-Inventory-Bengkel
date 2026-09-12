@@ -280,8 +280,6 @@ Dengan adanya sistem terintegrasi, proses pencatatan dan monitoring dapat dilaku
 
 ## Tampilan Halaman Aplikasi
 
-## Tampilan Halaman Aplikasi
-
 ### Tampilan Login
 <p float="left">
   <img width="250" height="541" alt="Screenshot_2026-09-12-21-29-21-392_com bengkel sempoeloer" src="https://github.com/user-attachments/assets/ead0fd1f-12b7-42a8-b50d-83ea968721a1" />
