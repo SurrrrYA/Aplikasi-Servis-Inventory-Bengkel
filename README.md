@@ -1,59 +1,287 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Aplikasi Servis Inventory Bengkel
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Backend REST API untuk aplikasi manajemen servis dan inventory bengkel motor. Aplikasi ini dirancang untuk membantu proses pengelolaan servis, pelanggan, kendaraan, barang, stok, transaksi, project, laporan, serta pengguna dalam satu sistem terintegrasi.
 
-## About Laravel
+Backend dikembangkan menggunakan Laravel dan digunakan sebagai penghubung antara aplikasi Android dengan database serta layanan backend.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Fitur Utama
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+###  Autentikasi & Manajemen Pengguna
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+* Login pengguna.
+* Autentikasi menggunakan Laravel Sanctum.
+* Manajemen akun pengguna.
+* Role pengguna:
 
-## Learning Laravel
+  * Owner
+  * Admin
+  * Kasir
+* Status akun Aktif / Nonaktif.
+* Pengguna nonaktif tidak dapat menggunakan akun.
+* Pengelolaan nama, email, role, dan password.
+* Pembatasan perubahan role dan status pada akun sendiri.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+###  Pelanggan & Kendaraan
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+* Pengelolaan data pelanggan.
+* Pengelolaan data kendaraan.
+* Satu pelanggan dapat memiliki beberapa kendaraan.
+* Data kendaraan terhubung dengan data pelanggan.
+* Data pelanggan dan kendaraan dapat digunakan dalam proses servis dan transaksi.
 
-## Laravel Sponsors
+### 🔧 Manajemen Servis
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+* Pengelolaan data jasa servis.
+* Penambahan jasa servis.
+* Perubahan data jasa.
+* Penghapusan jasa.
+* Pengelolaan harga jasa.
+* Data jasa dapat digunakan dalam transaksi dan project.
 
-### Premium Partners
+###  Inventory
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+* Pengelolaan kategori barang.
+* Pengelolaan data barang.
+* Pengelolaan harga barang.
+* Pengelolaan stok barang.
+* Stok masuk.
+* Stok keluar.
+* Riwayat pergerakan stok.
+* Batas minimum stok.
+* Monitoring barang dengan stok menipis.
 
-## Contributing
+### 📋 Project Bengkel
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+* Pembuatan project.
+* Pengelolaan data project.
+* Pengelolaan item barang pada project.
+* Pengelolaan item jasa pada project.
+* Pengelolaan biaya project.
+* Perhitungan biaya project.
+* Pengelolaan status project.
+* Penyelesaian project.
+* Pencatatan pendapatan dari project.
 
-## Code of Conduct
+###  Transaksi
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+* Pencatatan transaksi.
+* Detail transaksi.
+* Pengelolaan pembayaran.
+* Pembatalan transaksi.
+* Pencatatan pendapatan.
+* Riwayat transaksi.
 
-## Security Vulnerabilities
+###  Dashboard & Laporan
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Dashboard dan laporan digunakan untuk membantu pengguna memantau kondisi operasional bengkel.
 
-## License
+Fitur laporan meliputi:
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+* Dashboard operasional.
+* Laporan penjualan.
+* Laporan stok.
+* Informasi transaksi.
+* Informasi pendapatan.
+* Monitoring inventory.
+
+### 📝 Activity Log
+
+Sistem menyediakan pencatatan aktivitas pengguna untuk kebutuhan audit dan monitoring.
+
+Aktivitas yang dapat dicatat antara lain:
+
+* Menambahkan data.
+* Mengubah data.
+* Menghapus data.
+* Mengubah status pengguna.
+* Mengelola barang.
+* Mengelola jasa.
+* Mengelola project.
+* Perubahan data penting lainnya.
+
+Activity log mencatat pengguna yang melakukan aktivitas serta data sebelum dan sesudah perubahan jika diperlukan.
+
+Contoh aktivitas:
+
+```text
+Kasir menambahkan barang Oli Mesin
+Admin mengubah harga barang Oli Mesin
+Kasir menambahkan project Custom Minibike
+Admin menonaktifkan akun Kasir
+```
+
+###  Firebase Push Notification
+
+Aplikasi menggunakan Firebase Cloud Messaging (FCM) untuk mengirimkan notifikasi ke perangkat Android.
+
+Jenis notifikasi yang tersedia:
+
+#### Project Baru
+
+Memberikan informasi kepada Owner ketika project baru ditambahkan.
+
+```text
+Project Baru
+Project Custom Minibike telah ditambahkan.
+```
+
+#### Project Selesai
+
+Memberikan informasi ketika project telah diselesaikan.
+
+```text
+Project Selesai
+Project Custom Minibike telah selesai.
+```
+
+#### Pendapatan Masuk
+
+Memberikan informasi ketika terdapat pendapatan dari project atau transaksi.
+
+```text
+Pendapatan Masuk
+Pendapatan sebesar Rp2.500.000 telah diterima.
+```
+
+#### Stok Menipis
+
+Memberikan informasi ketika stok barang melewati batas minimum.
+
+```text
+Stok Menipis
+Stok Oli Mesin tersisa 4 pcs.
+Batas minimum: 5 pcs.
+```
+
+Notifikasi stok menggunakan mekanisme threshold sehingga notifikasi dikirim ketika stok melewati batas minimum dari kondisi sebelumnya.
+
+## Role Pengguna
+
+| Role      | Hak Akses Utama                                                                         |
+| --------- | --------------------------------------------------------------------------------------- |
+| **Owner** | Memantau operasional, inventory, project, transaksi, laporan, dan notifikasi            |
+| **Admin** | Mengelola pengguna, data master, laporan, serta aktivitas sistem                        |
+| **Kasir** | Mengelola pelanggan, kendaraan, servis, barang, transaksi, dan project sesuai hak akses |
+
+Hak akses setiap pengguna dikontrol berdasarkan role yang dimiliki.
+
+## Teknologi
+
+### Backend
+
+* PHP 8.2
+* Laravel 12
+* Laravel Sanctum
+* MySQL
+* REST API
+
+### Notification
+
+* Firebase Cloud Messaging (FCM)
+
+### Android Client
+
+* Kotlin
+* Android Studio
+* Retrofit
+* Gson
+
+### Web Admin
+
+* Laravel Blade
+* Vite
+* HTML
+* CSS
+* JavaScript
+
+## Arsitektur Sistem
+
+Secara umum, sistem menggunakan arsitektur client-server.
+
+```text
+┌──────────────────────┐
+│    Android Client    │
+│       Kotlin        │
+└──────────┬───────────┘
+           │
+           │ REST API
+           ▼
+┌──────────────────────┐
+│   Laravel Backend    │
+│                      │
+│ Authentication       │
+│ Business Logic       │
+│ Role & Permission    │
+│ Activity Log         │
+│ Notification         │
+└──────────┬───────────┘
+           │
+           ▼
+┌──────────────────────┐
+│       MySQL          │
+│      Database        │
+└──────────────────────┘
+           │
+           │
+           ▼
+┌──────────────────────┐
+│ Firebase Cloud       │
+│ Messaging (FCM)      │
+└──────────────────────┘
+
+``````
+
+
+
+## Status Pengembangan
+
+Project masih dalam tahap pengembangan.
+
+Fitur yang telah tersedia:
+
+* Authentication
+* Role management
+* User management
+* Active / inactive account
+* Customer management
+* Vehicle management
+* Service management
+* Product management
+* Inventory management
+* Stock movement
+* Low stock monitoring
+* Transaction management
+* Project management
+* Project item management
+* Project cost management
+* Dashboard
+* Sales report
+* Stock report
+* Activity log
+* Firebase push notification
+
+
+## Tujuan Project
+
+Aplikasi ini dikembangkan untuk membantu digitalisasi proses operasional bengkel motor, khususnya dalam pengelolaan:
+
+* Data pelanggan.
+* Data kendaraan.
+* Servis.
+* Inventory.
+* Stok.
+* Transaksi.
+* Project.
+* Pendapatan.
+* Pengguna.
+* Aktivitas sistem.
+
+Dengan adanya sistem terintegrasi, proses pencatatan dan monitoring dapat dilakukan secara lebih terstruktur serta mengurangi ketergantungan terhadap pencatatan manual.
+
+## Author
+
+**Surya**
+
+---
+
+> Aplikasi Servis Inventory Bengkel dikembangkan sebagai project portfolio untuk menunjukkan implementasi backend REST API, database management, role-based access control, inventory management, transaction management, audit logging, project management, dan Firebase Cloud Messaging.
