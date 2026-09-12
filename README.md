@@ -84,7 +84,7 @@ Fitur laporan meliputi:
 * Informasi pendapatan.
 * Monitoring inventory.
 
-### 📝 Activity Log
+###  Activity Log
 
 Sistem menyediakan pencatatan aktivitas pengguna untuk kebutuhan audit dan monitoring.
 
