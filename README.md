@@ -29,7 +29,7 @@ Backend dikembangkan menggunakan Laravel dan digunakan sebagai penghubung antara
 * Data kendaraan terhubung dengan data pelanggan.
 * Data pelanggan dan kendaraan dapat digunakan dalam proses servis dan transaksi.
 
-### 🔧 Manajemen Servis
+###  Manajemen Servis
 
 * Pengelolaan data jasa servis.
 * Penambahan jasa servis.
@@ -50,7 +50,7 @@ Backend dikembangkan menggunakan Laravel dan digunakan sebagai penghubung antara
 * Batas minimum stok.
 * Monitoring barang dengan stok menipis.
 
-### 📋 Project Bengkel
+###  Project Bengkel
 
 * Pembuatan project.
 * Pengelolaan data project.
