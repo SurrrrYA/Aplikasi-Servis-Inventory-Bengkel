@@ -309,6 +309,12 @@ Dengan adanya sistem terintegrasi, proses pencatatan dan monitoring dapat dilaku
   <img width="250" height="541" alt="Screenshot_2026-09-12-23-01-26-245_com bengkel sempoeloer" src="https://github.com/user-attachments/assets/27361bab-f8b4-455f-a45e-19007c878499" />
   <img width="250" height="541" alt="Screenshot_2026-09-12-23-01-31-496_com bengkel sempoeloer" src="https://github.com/user-attachments/assets/d3b70350-3a54-405d-ad83-f0c298e73380" />
   <img width="250" height="541" alt="Screenshot_2026-09-12-23-01-39-917_com bengkel sempoeloer" src="https://github.com/user-attachments/assets/8fcaffba-d017-4971-bdb7-e0ca92c9f050" />
+    <img width="250" height="541" alt="Screenshot_2026-09-13-13-01-46-908_com bengkel sempoeloer" src="https://github.com/user-attachments/assets/3b2ba3c6-48b9-4927-8313-cc232bd3eb60" />
+    <img width="250" height="541" alt="Screenshot_2026-09-13-13-01-51-454_com bengkel sempoeloer" src="https://github.com/user-attachments/assets/c75256a6-a282-47ce-8359-b1ee91ca9a2a" />
+<img width="250" height="541" alt="Screenshot_2026-09-13-13-01-54-359_com bengkel sempoeloer" src="https://github.com/user-attachments/assets/a2392806-120c-4d3f-8789-e8e267a2cdf3" />
+<img width="250" height="541" alt="Screenshot_2026-09-13-13-02-02-342_com bengkel sempoeloer" src="https://github.com/user-attachments/assets/3b86c5fd-7304-4537-96ce-741233960498" />
+
+
 </p>
 
 ## Author
