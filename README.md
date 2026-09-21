@@ -114,47 +114,6 @@ Admin menonaktifkan akun Kasir
 
 Aplikasi menggunakan Firebase Cloud Messaging (FCM) untuk mengirimkan notifikasi ke perangkat Android.
 
-Jenis notifikasi yang tersedia:
-
-#### Project Baru
-
-Memberikan informasi kepada Owner ketika project baru ditambahkan.
-
-```text
-Project Baru
-Project Custom Minibike telah ditambahkan.
-```
-
-#### Project Selesai
-
-Memberikan informasi ketika project telah diselesaikan.
-
-```text
-Project Selesai
-Project Custom Minibike telah selesai.
-```
-
-#### Pendapatan Masuk
-
-Memberikan informasi ketika terdapat pendapatan dari project atau transaksi.
-
-```text
-Pendapatan Masuk
-Pendapatan sebesar Rp2.500.000 telah diterima.
-```
-
-#### Stok Menipis
-
-Memberikan informasi ketika stok barang melewati batas minimum.
-
-```text
-Stok Menipis
-Stok Oli Mesin tersisa 4 pcs.
-Batas minimum: 5 pcs.
-```
-
-Notifikasi stok menggunakan mekanisme threshold sehingga notifikasi dikirim ketika stok melewati batas minimum dari kondisi sebelumnya.
-
 ## Role Pengguna
 
 | Role      | Hak Akses Utama                                                                         |
@@ -193,45 +152,6 @@ Hak akses setiap pengguna dikontrol berdasarkan role yang dimiliki.
 * HTML
 * CSS
 * JavaScript
-
-## Arsitektur Sistem
-
-Secara umum, sistem menggunakan arsitektur client-server.
-
-```text
-┌──────────────────────┐
-│    Android Client    │
-│       Kotlin        │
-└──────────┬───────────┘
-           │
-           │ REST API
-           ▼
-┌──────────────────────┐
-│   Laravel Backend    │
-│                      │
-│ Authentication       │
-│ Business Logic       │
-│ Role & Permission    │
-│ Activity Log         │
-│ Notification         │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│       MySQL          │
-│      Database        │
-└──────────────────────┘
-           │
-           │
-           ▼
-┌──────────────────────┐
-│ Firebase Cloud       │
-│ Messaging (FCM)      │
-└──────────────────────┘
-
-``````
-
-
 
 ## Status Pengembangan
 
